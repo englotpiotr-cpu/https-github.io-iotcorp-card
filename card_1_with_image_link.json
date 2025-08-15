@@ -1,0 +1,255 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "Container",
+      "bleed": true,
+      "backgroundImage": {
+        "url": "https://raw.githubusercontent.com/OfficeDev/Microsoft-Teams-Adaptive-Card-Samples/main/samples/simple-event/assets/eventHero.png",
+        "verticalAlignment": "Center"
+      },
+      "minHeight": "200px",
+      "verticalContentAlignment": "Bottom",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "MAY",
+          "wrap": true,
+          "color": "Light",
+          "size": "Large"
+        },
+        {
+          "type": "TextBlock",
+          "text": "31",
+          "wrap": true,
+          "color": "Light",
+          "size": "ExtraLarge",
+          "spacing": "None",
+          "weight": "Bolder"
+        }
+      ],
+      "targetWidth": "Standard"
+    },
+    {
+      "type": "Container",
+      "bleed": true,
+      "backgroundImage": {
+        "url": "https://raw.githubusercontent.com/OfficeDev/Microsoft-Teams-Adaptive-Card-Samples/main/samples/simple-event/assets/eventHero.png",
+        "verticalAlignment": "Center"
+      },
+      "minHeight": "200px",
+      "verticalContentAlignment": "Bottom",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "This Year",
+          "wrap": true,
+          "color": "Light",
+          "size": "Large"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Soon",
+          "wrap": true,
+          "color": "Light",
+          "size": "ExtraLarge",
+          "spacing": "None",
+          "weight": "Bolder"
+        }
+      ],
+      "targetWidth": "Wide"
+    },
+    {
+      "type": "Container",
+      "bleed": true,
+      "backgroundImage": {
+        "url": "https://raw.githubusercontent.com/OfficeDev/Microsoft-Teams-Adaptive-Card-Samples/main/samples/simple-event/assets/eventHero.png"
+      },
+      "minHeight": "200px",
+      "verticalContentAlignment": "Bottom",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "8px"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "This Year",
+                  "wrap": true,
+                  "color": "Light",
+                  "size": "Large"
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "Soon",
+                  "wrap": true,
+                  "color": "Light",
+                  "size": "ExtraLarge",
+                  "spacing": "None",
+                  "weight": "Bolder"
+                }
+              ],
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "stretch"
+            }
+          ]
+        }
+      ],
+      "targetWidth": "Narrow",
+      "roundedCorners": true
+    },
+    {
+      "type": "Container",
+      "bleed": true,
+      "backgroundImage": {
+        "url": "https://raw.githubusercontent.com/OfficeDev/Microsoft-Teams-Adaptive-Card-Samples/main/samples/simple-event/assets/eventHero.png"
+      },
+      "minHeight": "200px",
+      "verticalContentAlignment": "Bottom",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "8px"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "wrap": true,
+                  "color": "Light",
+                  "size": "Large",
+                  "text": "i"
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "Soon",
+                  "wrap": true,
+                  "color": "Light",
+                  "size": "ExtraLarge",
+                  "spacing": "None",
+                  "weight": "Bolder"
+                }
+              ],
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "stretch"
+            }
+          ]
+        },
+        {
+          "type": "Badge",
+          "text": "New Badge",
+          "size": "Large",
+          "style": "Accent"
+        }
+      ],
+      "targetWidth": "VeryNarrow",
+      "roundedCorners": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "AI  IoT\u2122Corp\u00a9 ",
+      "wrap": true,
+      "size": "Small",
+      "weight": "Bolder",
+      "isSubtle": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "AI Reality Check: Accessibility and Personalization \nnew solutions for Automations\nseries Agents for virtual offices coustom for commercial use",
+      "wrap": true,
+      "weight": "Bolder",
+      "spacing": "None"
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "size": "Small",
+      "weight": "Bolder",
+      "text": "Coming Soon"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Online (Teams) and Organisations ",
+      "wrap": true,
+      "size": "Small",
+      "isSubtle": true,
+      "spacing": "None"
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "card": {
+            "type": "AdaptiveCard",
+            "body": [
+              {
+                "type": "Input.Text",
+                "id": "email",
+                "placeholder": "Enter your email address",
+                "label": "Email address",
+                "isRequired": true,
+                "errorMessage": "An email is required"
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.Submit",
+                    "title": "Submit",
+                    "style": "positive"
+                  }
+                ]
+              }
+            ],
+            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+            "version": "1.5"
+          },
+          "style": "positive",
+          "title": " IoT\u2122Corp\u00a9 "
+        },
+        {
+          "type": "Action.ShowCard",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+            "version": "1.5"
+          },
+          "title": "Sign in ",
+          "style": "positive"
+        }
+      ]
+    }
+  ],
+  "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+  "imageLink": "https://onedrive.live.com/download?cid=YOUR_CID&resid=YOUR_RESID&authkey=YOUR_AUTHKEY"
+}
